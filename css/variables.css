@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'adam';
+    src: url('../assets/fonts/Adam.otf');
+}
+::selection {
+    background: #4e96bfb4;
+}
+::-moz-selection {
+    background: #4e9bf6b4;
+}
+html {
+    height: 100%;
+    cursor:url('../assets/cur/ghost.cur'), auto;
+}

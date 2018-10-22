@@ -1,0 +1,135 @@
+img {
+    position: relative;
+    transition: 0.12s;
+    padding: 16%;
+    height: 100px;
+    width: 100px;
+    z-index: 10;
+    margin-left: 400px;
+}
+#s, #b, #p, #s2{
+    position: absolute
+}
+#images:active {
+    animation: move 3.6s;
+}
+@keyframes move {
+    0%{transform: rotate(0); margin-left: 0;}
+    50%{transform: rotate(-8deg); margin-left: -50px;}
+    100%{transform: rotate(0); margin-left: 0;}
+}
+@-o-keyframes move {
+    0%{transform: rotate(0); margin-left: 0;}
+    50%{transform: rotate(-8deg); margin-left: -50px;}
+    100%{transform: rotate(0); margin-left: 0;}
+}
+@-moz-keyframes move {
+    0%{transform: rotate(0); margin-left: 0;}
+    50%{transform: rotate(-8deg); margin-left: -50px;}
+    100%{transform: rotate(0); margin-left: 0;}
+}
+@-webkit-keyframes move {
+    0%{transform: rotate(0); margin-left: 0;}
+    50%{transform: rotate(-8deg); margin-left: -50px;}
+    100%{transform: rotate(0); margin-left: 0;}
+}
+
+#s {
+    box-shadow: 0 -2em 2em black;
+    z-index: 0;
+    clip: rect(302px, 350px, 350px, 0);
+    animation: fadeinandout 0.75s infinite;
+}
+@keyframes fadeinandout {
+    0%{opacity: 1;   clip: rect(299px, 350px, 350px, 0);}
+    50%{opacity: 0.5;   clip: rect(302px, 350px, 350px, 0);}
+    100%{opacity: 1;  clip: rect(299px, 350px, 350px, 0);}
+}
+@-o-keyframes fadeinandout {
+    0%{opacity: 1;   clip: rect(299px, 350px, 350px, 0);}
+    50%{opacity: 0.5;   clip: rect(302px, 350px, 350px, 0);}
+    100%{opacity: 1;  clip: rect(299px, 350px, 350px, 0);}
+}
+@-moz-keyframes fadeinandout {
+    0%{opacity: 1;   clip: rect(299px, 350px, 350px, 0);}
+    50%{opacity: 0.5;   clip: rect(302px, 350px, 350px, 0);}
+    100%{opacity: 1;  clip: rect(299px, 350px, 350px, 0);}
+}
+@-webkit-keyframes fadeinandout {
+    0%{opacity: 1;   clip: rect(299px, 350px, 350px, 0);}
+    50%{opacity: 0.5;   clip: rect(302px, 350px, 350px, 0);}
+    100%{opacity: 1;  clip: rect(299px, 350px, 350px, 0);}
+}
+#s2 {
+    opacity: 0.25;
+    z-index: -3;
+    clip: rect(100px, 350px, 302px, 0);
+
+}
+#p {
+    z-index: -1;
+    animation: rect1Ani 0.45s infinite;
+    clip: rect(200px,400px, 257px, 0);
+
+}
+@keyframes rect1Ani {
+    0%{margin-left: 400px;}
+    50%{margin-left:380px;}
+    100%{margin-left: 400px;}
+}
+@-o-keyframes rect1Ani {
+    0%{margin-left: 400px;}
+    50%{margin-left:380px;}
+    100%{margin-left: 400px;}
+}
+@-moz-keyframes rect1Ani {
+    0%{margin-left: 400px;}
+    50%{margin-left:380px;}
+    100%{margin-left: 400px;}
+}
+@-webkit-keyframes rect1Ani {
+    0%{margin-left: 400px;}
+    50%{margin-left:380px;}
+    100%{margin-left: 400px;}
+}
+#b {
+    z-index: -2;
+    animation: rectAni 0.45s infinite;
+    clip: rect(275px, 400px, 300px, 0);
+}
+@-o-keyframes rectAni {
+    0%{clip: rect(275px, 400px, 300px, 0); margin-left: 400px;}
+    50%{clip: rect(265px, 400px, 300px, 0);margin-left: 415px;}
+    100%{clip: rect(275px, 400px, 300px, 0);margin-left: 400px;}
+}
+@-moz-keyframes rectAni {
+    0%{clip: rect(275px, 400px, 300px, 0); margin-left: 400px;}
+    50%{clip: rect(265px, 400px, 300px, 0);margin-left: 415px;}
+    100%{clip: rect(275px, 400px, 300px, 0);margin-left: 400px;}
+}
+@-webkit-keyframes rectAni {
+    0%{clip: rect(275px, 400px, 300px, 0); margin-left: 400px;}
+    50%{clip: rect(265px, 400px, 300px, 0);margin-left: 415px;}
+    100%{clip: rect(275px, 400px, 300px, 0);margin-left: 400px;}
+}
+@keyframes rectAni {
+    0%{clip: rect(275px, 400px, 300px, 0); margin-left: 400px;}
+    50%{clip: rect(265px, 400px, 300px, 0);margin-left: 415px;}
+    100%{clip: rect(275px, 400px, 300px, 0);margin-left: 400px;}
+}
+#pauseplay {
+    z-index: -4;
+    left: 44.5%;
+    top: 53%;
+position: absolute;
+    box-shadow: 0.15em 0.25em 2em black;
+    font-family: 'adam';
+    font-size: 26px;
+height: 50px;
+width: 100px;
+background-color: gray;
+border-radius: 200px;
+}
+#pauseplay:hover{
+    cursor: url('../../assets/cur/pika.gif'), auto;
+}

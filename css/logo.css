@@ -1,0 +1,9 @@
+#logo {
+    width: 20%;
+    height: 20%;
+margin-left: 40%;
+transition: 5s;
+}
+#logo:hover {
+    cursor: pointer;
+}

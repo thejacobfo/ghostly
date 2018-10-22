@@ -1,0 +1,10 @@
+#text {
+    z-index: 1;
+    position: absolute;
+    margin-left: 36%;
+    top: 25px;
+    font-family: 'adam';
+}
+#text:hover {
+    cursor: text;
+}

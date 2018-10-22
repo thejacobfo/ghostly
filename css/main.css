@@ -1,0 +1,7 @@
+@import 'variables.css';
+@import 'logo.css';
+@import 'text.css';
+body {
+    background-color: white;
+    transition: 1s;
+}

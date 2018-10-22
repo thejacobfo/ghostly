@@ -1,0 +1,32 @@
+#form {
+    opacity: 0;
+}
+#b, #form {
+    text-align: center;
+    margin-left: 37%;
+    height: 36px;
+    width: 25%;
+    transition: 1.5s;
+    font-family: 'adam';
+    font-size: 28px;
+}
+#b:hover {
+    cursor: url('../assets/cur/sad.cur'), auto;
+}
+#btn {
+    box-shadow: 0 0 .5em #4e9bf6b4;
+    padding: 1em;
+    top: 44%;
+    left: 57%;
+    z-index: 10;
+    height: 3.5%;
+    position: absolute;
+}
+
+#showform {
+    height: 30px;
+    
+}
+#showform:hover {
+    cursor: pointer;
+}

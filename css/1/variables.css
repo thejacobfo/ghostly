@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+    opacity:1;
+    background-size: 100%;
+    background: linear-gradient(to left, rgba(228, 140, 155, 0.151), black);
+    animation: bggay 2s infinite;
+    cursor: url('../../assets/cur/ghost.cur'), auto;
+}
+@keyframes bggay {
+0%{background-size: 0.1% 90%}
+50%{background-size: 0.2% 95%}
+100%{background-size: 0.1% 90%}
+}
+@-moz-keyframes bggay {
+0%{background-size: 0.1% 90%}
+50%{background-size: 0.2% 95%}
+100%{background-size: 0.1% 90%}
+}
+@-o-keyframes bggay {
+0%{background-size: 0.1% 90%}
+50%{background-size: 0.2% 95%}
+100%{background-size: 0.1% 90%}
+}
+@-webkit-keyframes bggay {
+0%{background-size: 0.1% 90%}
+50%{background-size: 0.2% 95%}
+100%{background-size: 0.1% 90%}
+}
+img:hover {
+    cursor: url('../../assets/cur/pika.gif'), auto;
+
+}
