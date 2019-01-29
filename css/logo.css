@@ -4,6 +4,6 @@
 margin-left: 40%;
 transition: 5s;
 }
-#logo:hover {
+    #logo:hover {
     cursor: pointer;
 }

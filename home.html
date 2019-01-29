@@ -4,32 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" href="./assets/cur/ghost.cur">
-    <!-- <script src="snowstorm.js"></script> -->
-    <!-- <script src="snowstorm-min.js"></script> -->
+    <!-- <script src="snowstorm.js"></script>
+    <script src="snowstorm-min.js"></script> -->
     <title>&nbsp;</title>
-    <input id="darkmode" value="Dark Mode" onclick="darkMode()" type="button">
-    <input id="snow" value="Snowstorm" onclick="snowStormOn()" type="button">
+    <section id="headbtns">
+    <input class="headbtn" id="darkmode" value="Dark Mode" onclick="darkMode()" type="button">
+    <input class="headbtn" id="docs" value="Docs" onclick="window.open('README.md', '_blank', 'height=500px, width=500px, top=150px, left=500px');" type="button">
+    <div class="dropdown">
+    <input id="Socials" value="Socials" type="button">&nbsp;
+    <div class="content">
+        <input class="smbtn" value="Instagram" id="ig" onclick="window.open('https://www.instagram.com/undead', '_blank')" type="button">
+        <input class="smbtn" value="Twitter" id="tw" onclick="window.open('https://www.twitter.com/hottest', '_blank')"  type="button">
+    </div>
+    </div>
+</section>
+    <!-- <input id="snow" value="Snowstorm" onclick="snowStormOn()" type="button"> -->
 </head>
 <body>
     <!-- <h1 id="title"></h1> -->
     <div><img onclick="window.location.href = '1.html'" id="logo" src="./assets/pics/ghostly.png" />
         </div>
         <div>
-        <input id="b" value="Email Me" onmouseout="thisOther()" onmouseover="thisFunction()" type="text"><br /><br /><br />
-        <center>
-        <input type="button" onclick="location.href='mailto:j@pedophile.network'" id="showform" value="Launch Mail Client"></center>
-
+        <center><input id="b" value="Email Me" onmouseout="thisOther()" onmouseover="thisFunction()" type="text"><br />
+        <a href="javascript:void(0)" onmouseover="thisFunctionL()" onmouseout="thisFunctionOL()" id="copyL" onclick="copyEmail()" style="text-align: center; display: inline-block; font-size: 12px; font-family: 'adam';">Copy to Clipboard</a><br /><br />
+        <input type="button" onclick="location.href='mailto:foul@riseup.net'" id="showform" value="Launch Mail Client"></center>
         <!-- <input type="button" onclick="thisFunction1()" id="showform" value="Show Form"></center> -->
-        <form id="form" action="contact.php" method="post">
+        <!-- <form id="form" action="contact.php" method="post">
             <p>Name</p> <input type="text" name="name">
             <p>Your Email</p> <input type="text" name="email">
             <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
             <input type="submit" value="Send"><input type="reset" value="Clear">
-        </form>
-        
+        </form> -->
         </div>
+        <div class="whitey"></div>
         <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>

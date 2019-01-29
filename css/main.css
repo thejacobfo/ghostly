@@ -2,6 +2,49 @@
 @import 'logo.css';
 @import 'text.css';
 body {
+    height: 100vh;
+    width: 100vw;
     background-color: white;
     transition: 1s;
+    overflow: hidden;
 }
+
+#whitey {
+    transition: transform 0.23s ease-in-out;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 2em white;
+    background-color: white;
+    position: absolute;
+    z-index: -200;
+    opacity: 0.5;
+    filter: blur(5px);
+    animation: swing 1.5s ease-in-out infinite alternate;
+    transform: translateX(-25px);
+    left:calc(50% - 50px);
+    top:calc(50% - 50px);
+}
+@keyframes swing {
+    100%{transform: translateX(25px)}
+}
+#whitey::before {
+        content:'';
+        position:absolute;
+        width:10px;
+        height:10px;
+        background:#fff;
+        border-radius:100%;
+        top:calc(50% - 5px);
+        left:calc(50% - 5px);
+        animation:bubbling 2s linear infinite;
+        filter:blur(5px);
+    }
+    @keyframes bubbling {
+          0%{box-shadow:50px 150px 0 rgba(255,255,255,0);}
+          50%{box-shadow:-100px 0px 0 rgba(255,255,255,1);}
+          100%{box-shadow:50px -150px 0 rgba(255,255,255,0);}
+        }
+        input:hover #whitey {
+            opacity: 1;
+        }

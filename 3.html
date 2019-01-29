@@ -1,16 +1,19 @@
-<audio src="assets/sounds/falling.mp3" loop="true"></audio>
+<center><audio src="assets/sounds/falling.mp3" loop="true"></audio></center>
 <link rel="stylesheet" href="./css/3/main.css">
 <title>&nbsp; idk</title>
+<script src="./scripts/music.js"></script>
 <link rel="icon" href="./assets/pics/332c975df7b897af-vaporwave-gun-sadboys-aesthetic-vaporwave-tumblr.gif">
 
-<div onmouseout="hoverEnd()" onmouseover="functionHover()" onclick="window.history.back()" id="back" style="border: 0.1em solid rgb(161, 162, 206); width: 10%;border-radius: 120%; box-shadow: inset 0em 0em 1.5em rgb(118, 120, 251); background-color: rgb(171,172,254); padding: 14px; top: 50px; left: 100px; position: absolute;">
-<center><p style="padding: 0px;font-size: 28px;">Back</p></center> 
+<div onmouseout="hoverEnd()" onmouseover="functionHover()" onclick="window.history.back()" id="back" style="width: 10%;border-radius: 120%; box-shadow: inset 0em 0em 1.5em rgb(118, 120, 251); background-color: rgb(171,172,254);">
+<p style="padding: 0.25em;font-size: 28px;">Back</p>
 </div>
 
-<div onmouseout="hoverEndH()" onmouseover="functionHoverH()" onclick="window.location.href = 'home.html'" id="home" style="border: 0.1em solid rgb(161, 162, 206); width: 10%;border-radius: 120%; box-shadow: inset 0em 0em 1.5em rgb(118, 120, 251); background-color: rgb(171,172,254); padding: 14px; top: 50px; left: 345px; position: absolute;">
-<center><p style="padding: 0px;font-size: 28px;">Home</p></center>
+<div onmouseout="hoverEndH()" onmouseover="functionHoverH()" onclick="window.location.href = 'home.html'" id="home" style="width: 10%;border-radius: 120%; box-shadow: inset 0em 0em 1.5em rgb(118, 120, 251); background-color: rgb(171,172,254);">
+<p style="padding: 0.25em;font-size: 28px;">Home</p>
 </div>
-
+<div onmouseout="hoverEndK()" onmouseover="functionHoverK()" onclick="window.location.href = '4.html'" id="nextpage" style="width: 10%;border-radius: 120%; box-shadow: inset 0em 0em 1.5em rgb(118, 120, 251); background-color: rgb(171,172,254);">
+    <p style="padding: 0.25em;font-size: 28px;">Next</p>
+    </div>
 <script>
 function functionHover(){
     document.getElementById('back').style.transition = "0.35s"
@@ -29,6 +32,15 @@ function functionHoverH(){
 function hoverEndH(){
     document.getElementById('home').style.transition = "0.35s"
     document.getElementById('home').style.boxShadow = "inset 0em 0em 1.5em rgb(118, 120, 251)"
+
+} 
+function functionHoverK(){
+    document.getElementById('nextpage').style.transition = "0.35s"
+    document.getElementById('nextpage').style.boxShadow = "inset 0 0 2em rgb(75, 78, 251)"
+}   
+function hoverEndK(){
+    document.getElementById('nextpage').style.transition = "0.35s"
+    document.getElementById('nextpage').style.boxShadow = "inset 0em 0em 1.5em rgb(118, 120, 251)"
 
 }
 </script>
